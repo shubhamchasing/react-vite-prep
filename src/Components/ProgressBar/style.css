@@ -1,0 +1,27 @@
+.outer {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 1rem;
+  overflow: hidden;
+  width:100%;
+  margin: 2rem 0rem;
+  height: 1.25rem;
+}
+
+.inner {
+  border-radius: inherit;
+  height: 100%;
+  background-color: rgb(68, 158, 68);
+  transition: transform 1s ease-in;
+}
+
+.progressLabel{
+  color: white;
+  position: absolute;
+  top: 0;
+  right: .5rem; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
