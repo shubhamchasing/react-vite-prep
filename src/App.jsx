@@ -3,8 +3,9 @@ import "./App.css";
 // import UseState from './Components/UseState'
 // import ObjectUseState from './Components/ObjectUseState'
 // import ProgressBar from "./Components/ProgressBar";
+// import Tooltip from "./Components/Tooltip";
 
-import Tooltip from "./Components/Tooltip";
+import Sidebar from "./Components/Sidebar";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
       <div className="App">
-       <Tooltip/>
+       <Sidebar/>
       </div>
     </>
   );
