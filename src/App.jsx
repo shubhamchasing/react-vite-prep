@@ -1,5 +1,6 @@
 import "./App.css";
-import ContactForm from "./Components/Contact-Form";
+// import ContactForm from "./Components/Contact-Form";
+import EvenOrOddChecker from "./Components/OddEvenChecker";
 // import UseReducer from './Components/UseReducer'
 // import UseState from './Components/UseState'
 // import ObjectUseState from './Components/ObjectUseState'
@@ -7,15 +8,13 @@ import ContactForm from "./Components/Contact-Form";
 // import Tooltip from "./Components/Tooltip";
 // import Sidebar from "./Components/Sidebar";
 
-
-
 function App() {
   // const progressBarList = [0,1,3, 4,5, 10, 18, 50, 79, 100];
 
   return (
     <>
       <div className="App">
-       <ContactForm/>
+        <EvenOrOddChecker />
       </div>
     </>
   );
