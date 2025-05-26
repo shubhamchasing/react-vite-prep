@@ -1,11 +1,12 @@
 import "./App.css";
+import ContactForm from "./Components/Contact-Form";
 // import UseReducer from './Components/UseReducer'
 // import UseState from './Components/UseState'
 // import ObjectUseState from './Components/ObjectUseState'
 // import ProgressBar from "./Components/ProgressBar";
 // import Tooltip from "./Components/Tooltip";
+// import Sidebar from "./Components/Sidebar";
 
-import Sidebar from "./Components/Sidebar";
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <div className="App">
-       <Sidebar/>
+       <ContactForm/>
       </div>
     </>
   );
