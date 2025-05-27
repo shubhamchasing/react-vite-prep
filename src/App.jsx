@@ -1,5 +1,6 @@
 import "./App.css";
-import AgeCalculator from "./Components/Age-calculator";
+import RecipeFilterApp from "./Components/Filter-recipes";
+// import AgeCalculator from "./Components/Age-calculator";
 // import ContactForm from "./Components/Contact-Form";
 // import EvenOrOddChecker from "./Components/OddEvenChecker";
 // import UseReducer from './Components/UseReducer'
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <AgeCalculator />
+        <RecipeFilterApp />
       </div>
     </>
   );
