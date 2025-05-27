@@ -1,6 +1,7 @@
 import "./App.css";
+import AgeCalculator from "./Components/Age-calculator";
 // import ContactForm from "./Components/Contact-Form";
-import EvenOrOddChecker from "./Components/OddEvenChecker";
+// import EvenOrOddChecker from "./Components/OddEvenChecker";
 // import UseReducer from './Components/UseReducer'
 // import UseState from './Components/UseState'
 // import ObjectUseState from './Components/ObjectUseState'
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <EvenOrOddChecker />
+        <AgeCalculator />
       </div>
     </>
   );
