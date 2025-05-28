@@ -1,5 +1,6 @@
 import "./App.css";
-import InputFocus from "./Components/Focus-input";
+import ProgressBar from "./Components/Progress-bars";
+// import InputFocus from "./Components/Focus-input";
 // import Counter from "./Components/Counter";
 // import RecipeFilterApp from "./Components/Filter-recipes";
 // import AgeCalculator from "./Components/Age-calculator";
@@ -18,7 +19,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <InputFocus />
+        <ProgressBar />
       </div>
     </>
   );
