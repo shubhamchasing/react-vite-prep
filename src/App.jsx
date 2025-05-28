@@ -1,5 +1,6 @@
 import "./App.css";
-import Counter from "./Components/Counter";
+import InputFocus from "./Components/Focus-input";
+// import Counter from "./Components/Counter";
 // import RecipeFilterApp from "./Components/Filter-recipes";
 // import AgeCalculator from "./Components/Age-calculator";
 // import ContactForm from "./Components/Contact-Form";
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Counter />
+        <InputFocus />
       </div>
     </>
   );
