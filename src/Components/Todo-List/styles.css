@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-todo {
+  font-size: 1.2rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+li {
+  font-size: 1.5rem;
+  
+}

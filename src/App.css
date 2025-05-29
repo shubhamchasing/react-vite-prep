@@ -1,12 +1,39 @@
-#root {
+/* Simple global reset for practice projects */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+ul,li {
+  list-style-position: inside;
+}
+
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
-  /* padding: 2rem; */
+  padding: 2rem;
   text-align: center;
 }
 body {
   margin: 0;
-}
+} */
 
 /* .logo {
   height: 6em;
