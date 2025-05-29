@@ -1,5 +1,6 @@
 import "./App.css";
-import Modal from "./Components/Modal";
+import Stopwatch from "./Components/Stopwatch";
+// import Modal from "./Components/Modal";
 // import ProgressBar from "./Components/Progress-bars";
 // import InputFocus from "./Components/Focus-input";
 // import Counter from "./Components/Counter";
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Modal />
+        <Stopwatch />
       </div>
     </>
   );
