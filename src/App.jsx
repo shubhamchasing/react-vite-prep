@@ -1,5 +1,6 @@
 import "./App.css";
-import ProgressBar from "./Components/Progress-bars";
+import Modal from "./Components/Modal";
+// import ProgressBar from "./Components/Progress-bars";
 // import InputFocus from "./Components/Focus-input";
 // import Counter from "./Components/Counter";
 // import RecipeFilterApp from "./Components/Filter-recipes";
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <ProgressBar />
+        <Modal />
       </div>
     </>
   );
