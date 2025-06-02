@@ -1,0 +1,17 @@
+.tab{
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.tab-content{
+    margin: 1rem;
+    text-align: center;
+}

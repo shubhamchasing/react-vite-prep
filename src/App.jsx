@@ -1,5 +1,6 @@
 import "./App.css";
-import TodoList from "./Components/Todo-List";
+import TabsParent from "./Components/Tabs";
+// import TodoList from "./Components/Todo-List";
 // import Stopwatch from "./Components/Stopwatch";
 // import Modal from "./Components/Modal";
 // import ProgressBar from "./Components/Progress-bars";
@@ -22,7 +23,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <TodoList />
+        <TabsParent />
       </div>
     </>
   );
