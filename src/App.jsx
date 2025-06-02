@@ -1,5 +1,5 @@
 import "./App.css";
-import SortableList from "./Components/Sort-List";
+// import SortableList from "./Components/Sort-List";
 // import TabsParent from "./Components/Tabs";
 // import TodoList from "./Components/Todo-List";
 // import Stopwatch from "./Components/Stopwatch";
@@ -7,7 +7,7 @@ import SortableList from "./Components/Sort-List";
 // import ProgressBar from "./Components/Progress-bars";
 // import InputFocus from "./Components/Focus-input";
 // import Counter from "./Components/Counter";
-// import RecipeFilterApp from "./Components/Filter-recipes";
+import RecipeFilterApp from "./Components/Filter-recipes";
 // import AgeCalculator from "./Components/Age-calculator";
 // import ContactForm from "./Components/Contact-Form";
 // import EvenOrOddChecker from "./Components/OddEvenChecker";
@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <SortableList />
+        <RecipeFilterApp />
       </div>
     </>
   );

@@ -2,7 +2,14 @@ import { useMemo, useState } from "react";
 import "./styles.css";
 import recipesData from "./recipesData";
 
-const ratingList = ["4.0+", "4.3+", "4.5+", "4.7+", "4.9"];
+// const ratingList = ["4.0+", "4.3+", "4.5+", "4.7+", "4.9"];
+const ratingList = [
+  { rating: "4.0+", value: 4.0 },
+  { rating: "4.3+", value: 4.3 },
+  { rating: "4.5+", value: 4.5 },
+  { rating: "4.7+", value: 4.7 },
+  { rating: "4.9", value: 4.9 },
+];
 
 const RecipeFilterApp = () => {
   const [recipeList, setRecipeList] = useState(recipesData);
@@ -41,13 +48,13 @@ const RecipeFilterApp = () => {
             <label htmlFor="ratingFilter">Filter by Rating: </label>
             <select
               name="ratingFilter"
-              id="filter"
+              id="ratingFilter"
               value={selectRating}
               onChange={handleSelectRating}
             >
-              {ratingList.map((rating) => (
-                <option key={rating} value={rating}>
-                  {rating}
+              {ratingList.map((item) => (
+                <option key={item.value} value={item.value}>
+                  {item.rating}
                 </option>
               ))}
             </select>
