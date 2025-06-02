@@ -1,5 +1,6 @@
 import "./App.css";
-import TabsParent from "./Components/Tabs";
+import SortableList from "./Components/Sort-List";
+// import TabsParent from "./Components/Tabs";
 // import TodoList from "./Components/Todo-List";
 // import Stopwatch from "./Components/Stopwatch";
 // import Modal from "./Components/Modal";
@@ -23,7 +24,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <TabsParent />
+        <SortableList />
       </div>
     </>
   );
