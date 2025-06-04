@@ -1,5 +1,6 @@
 import "./App.css";
-import DarkModeToggle from "./Components/Dark-Mode";
+import TogglePassword from "./Components/Toggle-Password";
+// import DarkModeToggle from "./Components/Dark-Mode";
 // import SortableList from "./Components/Sort-List";
 // import TabsParent from "./Components/Tabs";
 // import TodoList from "./Components/Todo-List";
@@ -25,7 +26,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <DarkModeToggle />
+        <TogglePassword />
       </div>
     </>
   );
