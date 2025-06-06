@@ -1,5 +1,6 @@
 import "./App.css";
-import TogglePassword from "./Components/Toggle-Password";
+import AccordionParent from "./Components/Accordion";
+// import TogglePassword from "./Components/Toggle-Password";
 // import DarkModeToggle from "./Components/Dark-Mode";
 // import SortableList from "./Components/Sort-List";
 // import TabsParent from "./Components/Tabs";
@@ -26,7 +27,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <TogglePassword />
+        <AccordionParent />
       </div>
     </>
   );
