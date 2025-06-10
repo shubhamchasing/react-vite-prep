@@ -1,5 +1,6 @@
 import "./App.css";
-import UserProfile from "./Components/UserProfile";
+import ToastContainer from "./Components/Toast/ToastContainer";
+// import UserProfile from "./Components/UserProfile";
 // import AccordionParent from "./Components/Accordion";
 // import TogglePassword from "./Components/Toggle-Password";
 // import DarkModeToggle from "./Components/Dark-Mode";
@@ -28,7 +29,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <UserProfile />
+        <ToastContainer />
       </div>
     </>
   );
