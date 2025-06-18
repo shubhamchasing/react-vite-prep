@@ -1,5 +1,6 @@
 import "./App.css";
-import NestedCheckbox from "./Components/Nested-Checkbox";
+import Counter from "./Components/PreviousCount";
+// import NestedCheckbox from "./Components/Nested-Checkbox";
 // import ToastContainer from "./Components/Toast/ToastContainer";
 // import UserProfile from "./Components/UserProfile";
 // import AccordionParent from "./Components/Accordion";
@@ -30,7 +31,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <NestedCheckbox />
+        <Counter />
       </div>
     </>
   );
