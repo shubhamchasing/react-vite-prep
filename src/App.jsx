@@ -1,5 +1,6 @@
 import "./App.css";
-import Counter from "./Components/PreviousCount";
+import OTPInputParent from "./Components/OTP-Input";
+// import Counter from "./Components/PreviousCount";
 // import NestedCheckbox from "./Components/Nested-Checkbox";
 // import ToastContainer from "./Components/Toast/ToastContainer";
 // import UserProfile from "./Components/UserProfile";
@@ -31,7 +32,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Counter />
+        <OTPInputParent />
       </div>
     </>
   );
