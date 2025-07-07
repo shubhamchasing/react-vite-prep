@@ -1,0 +1,161 @@
+.App {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container {
+  width: 100%;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-button:hover {
+  background-color: #3a80d2;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-title {
+  font-weight: bold;
+  margin: 0;
+  font-size: 18px;
+}
+
+.todo-time {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  min-width: 60px;
+  text-align: right;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.timer-button,
+.reset-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.timer-button.start {
+  background-color: #4caf50;
+  color: white;
+}
+
+.timer-button.start:hover {
+  background-color: #3d9c40;
+}
+
+.timer-button.pause {
+  background-color: #ff9800;
+  color: white;
+}
+
+.timer-button.pause:hover {
+  background-color: #e68900;
+}
+
+.reset-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: #e53935;
+}
+
+.delete-button {
+  background-color: #757575;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #616161;
+}
+
+@media (max-width: 600px) {
+  .todo-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .todo-time {
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  .todo-actions {
+    flex-wrap: wrap;
+  }
+}
