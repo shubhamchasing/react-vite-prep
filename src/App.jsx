@@ -1,5 +1,6 @@
 import "./App.css";
-import TodoWithTimeout from "./Components/Todo-List-With-Timeout";
+import FaqAccordion from "./Components/FaqAccordian";
+// import TodoWithTimeout from "./Components/Todo-List-With-Timeout";
 // import OTPInputParent from "./Components/OTP-Input";
 // import Counter from "./Components/PreviousCount";
 // import NestedCheckbox from "./Components/Nested-Checkbox";
@@ -33,7 +34,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <TodoWithTimeout />
+        <FaqAccordion />
       </div>
     </>
   );
