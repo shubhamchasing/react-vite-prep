@@ -1,0 +1,56 @@
+.copyToClipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.copyToClipboard > h1 {
+  margin: 1rem 0;
+}
+.copyToClipboard > p {
+  margin-bottom: 1rem;
+}
+.copyToClipboard-container {
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.btn {
+  padding: 5px;
+  margin: 10px 0;
+  width: 4rem;
+  cursor: pointer;
+}
+.message {
+  margin: 10px 0;
+  color: green;
+}
+.errorMessage {
+  color: red;
+  margin: 10px 0;
+}
+.ex-para {
+  display: flex;
+  gap: 10px;
+}
+.ex-para > button {
+  cursor: pointer;
+}
+.examples {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
