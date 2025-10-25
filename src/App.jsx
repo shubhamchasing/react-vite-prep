@@ -1,5 +1,5 @@
 import "./App.css";
-import FaqAccordion from "./Components/FaqAccordian";
+// import FaqAccordion from "./Components/FaqAccordian";
 // import TodoWithTimeout from "./Components/Todo-List-With-Timeout";
 // import OTPInputParent from "./Components/OTP-Input";
 // import Counter from "./Components/PreviousCount";
@@ -11,6 +11,7 @@ import FaqAccordion from "./Components/FaqAccordian";
 // import DarkModeToggle from "./Components/Dark-Mode";
 // import SortableList from "./Components/Sort-List";
 // import TabsParent from "./Components/Tabs";
+import TabSwitcher from "./Components/TabSwitcher";
 // import TodoList from "./Components/Todo-List";
 // import Stopwatch from "./Components/Stopwatch";
 // import Modal from "./Components/Modal";
@@ -34,7 +35,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <FaqAccordion />
+        <TabSwitcher />
       </div>
     </>
   );
