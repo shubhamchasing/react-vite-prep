@@ -1,5 +1,6 @@
 import "./App.css";
-import CopyClipboard from "./Components/CopyToClipboard";
+import AuthParent from "./Components/Authentication/AuthParent";
+// import CopyClipboard from "./Components/CopyToClipboard";
 // import FaqAccordion from "./Components/FaqAccordian";
 // import TodoWithTimeout from "./Components/Todo-List-With-Timeout";
 // import OTPInputParent from "./Components/OTP-Input";
@@ -36,7 +37,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <CopyClipboard />
+        <AuthParent />
       </div>
     </>
   );
