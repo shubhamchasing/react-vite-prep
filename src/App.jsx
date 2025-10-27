@@ -1,5 +1,6 @@
 import "./App.css";
-import BackToTop from "./Components/BackToTop";
+import ReadMoreToggle from "./Components/ReadMoreToggle";
+// import BackToTop from "./Components/BackToTop";
 // import ColorExplorer from "./Components/ColorExplorer";
 // import AuthParent from "./Components/Authentication/AuthParent";
 // import CopyClipboard from "./Components/CopyToClipboard";
@@ -39,7 +40,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <BackToTop />
+        <ReadMoreToggle />
       </div>
     </>
   );
