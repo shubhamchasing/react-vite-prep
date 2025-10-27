@@ -1,5 +1,6 @@
 import "./App.css";
-import ColorExplorer from "./Components/ColorExplorer";
+import BackToTop from "./Components/BackToTop";
+// import ColorExplorer from "./Components/ColorExplorer";
 // import AuthParent from "./Components/Authentication/AuthParent";
 // import CopyClipboard from "./Components/CopyToClipboard";
 // import FaqAccordion from "./Components/FaqAccordian";
@@ -38,7 +39,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <ColorExplorer />
+        <BackToTop />
       </div>
     </>
   );
