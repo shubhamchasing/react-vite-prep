@@ -1,5 +1,6 @@
 import "./App.css";
-import AuthParent from "./Components/Authentication/AuthParent";
+import ColorExplorer from "./Components/ColorExplorer";
+// import AuthParent from "./Components/Authentication/AuthParent";
 // import CopyClipboard from "./Components/CopyToClipboard";
 // import FaqAccordion from "./Components/FaqAccordian";
 // import TodoWithTimeout from "./Components/Todo-List-With-Timeout";
@@ -37,7 +38,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <AuthParent />
+        <ColorExplorer />
       </div>
     </>
   );
