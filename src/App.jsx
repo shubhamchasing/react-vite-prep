@@ -1,5 +1,6 @@
 import "./App.css";
-import PasswordStrength from "./Components/PasswordStrength";
+import Toggle from "./Components/ToggleHook";
+// import PasswordStrength from "./Components/PasswordStrength";
 // import GetWeekday from "./Components/GetWeekday";
 // import ReadMoreToggle from "./Components/ReadMoreToggle";
 // import BackToTop from "./Components/BackToTop";
@@ -42,7 +43,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <PasswordStrength />
+        <Toggle />
       </div>
     </>
   );
