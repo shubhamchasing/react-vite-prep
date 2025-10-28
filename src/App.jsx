@@ -1,5 +1,6 @@
 import "./App.css";
-import ReadMoreToggle from "./Components/ReadMoreToggle";
+import GetWeekday from "./Components/GetWeekday";
+// import ReadMoreToggle from "./Components/ReadMoreToggle";
 // import BackToTop from "./Components/BackToTop";
 // import ColorExplorer from "./Components/ColorExplorer";
 // import AuthParent from "./Components/Authentication/AuthParent";
@@ -40,7 +41,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <ReadMoreToggle />
+        <GetWeekday />
       </div>
     </>
   );
