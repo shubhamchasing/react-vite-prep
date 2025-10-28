@@ -1,5 +1,6 @@
 import "./App.css";
-import GetWeekday from "./Components/GetWeekday";
+import PasswordStrength from "./Components/PasswordStrength";
+// import GetWeekday from "./Components/GetWeekday";
 // import ReadMoreToggle from "./Components/ReadMoreToggle";
 // import BackToTop from "./Components/BackToTop";
 // import ColorExplorer from "./Components/ColorExplorer";
@@ -41,7 +42,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <GetWeekday />
+        <PasswordStrength />
       </div>
     </>
   );
