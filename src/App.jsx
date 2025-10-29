@@ -1,5 +1,6 @@
 import "./App.css";
-import BlogPosts from "./Components/BlogPost";
+import QueenBoard from "./Components/Chessboard";
+// import BlogPosts from "./Components/BlogPost";
 // import Toggle from "./Components/ToggleHook";
 // import PasswordStrength from "./Components/PasswordStrength";
 // import GetWeekday from "./Components/GetWeekday";
@@ -44,7 +45,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <BlogPosts />
+        <QueenBoard />
       </div>
     </>
   );
