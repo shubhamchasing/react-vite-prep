@@ -1,5 +1,6 @@
 import "./App.css";
-import Toggle from "./Components/ToggleHook";
+import BlogPosts from "./Components/BlogPost";
+// import Toggle from "./Components/ToggleHook";
 // import PasswordStrength from "./Components/PasswordStrength";
 // import GetWeekday from "./Components/GetWeekday";
 // import ReadMoreToggle from "./Components/ReadMoreToggle";
@@ -43,7 +44,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Toggle />
+        <BlogPosts />
       </div>
     </>
   );
