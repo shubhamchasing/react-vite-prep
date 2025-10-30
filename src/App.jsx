@@ -1,5 +1,6 @@
 import "./App.css";
-import QueenBoard from "./Components/Chessboard";
+import King from "./Components/KingBoard";
+// import QueenBoard from "./Components/Chessboard";
 // import BlogPosts from "./Components/BlogPost";
 // import Toggle from "./Components/ToggleHook";
 // import PasswordStrength from "./Components/PasswordStrength";
@@ -45,7 +46,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <QueenBoard />
+        <King />
       </div>
     </>
   );
