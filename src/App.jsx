@@ -1,5 +1,6 @@
 import "./App.css";
-import King from "./Components/KingBoard";
+import ImageCarouselParent from "./Components/ImageCarousel";
+// import King from "./Components/KingBoard";
 // import QueenBoard from "./Components/Chessboard";
 // import BlogPosts from "./Components/BlogPost";
 // import Toggle from "./Components/ToggleHook";
@@ -46,7 +47,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <King />
+        <ImageCarouselParent />
       </div>
     </>
   );
