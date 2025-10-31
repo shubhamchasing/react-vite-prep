@@ -1,0 +1,18 @@
+.container{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item-list{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
