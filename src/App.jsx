@@ -1,5 +1,6 @@
 import "./App.css";
-import CardCarouselParent from "./Components/CardCarousel";
+import DragDrop from "./Components/DragAndDrop1";
+// import CardCarouselParent from "./Components/CardCarousel";
 // import TransferList from "./Components/TransferList";
 // import ImageCarouselParent from "./Components/ImageCarousel";
 // import King from "./Components/KingBoard";
@@ -49,7 +50,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <CardCarouselParent />
+        <DragDrop />
       </div>
     </>
   );
