@@ -1,5 +1,6 @@
 import "./App.css";
-import DragDrop from "./Components/DragAndDrop1";
+import WordCounter from "./Components/WordCounter";
+// import DragDrop from "./Components/DragAndDrop1";
 // import CardCarouselParent from "./Components/CardCarousel";
 // import TransferList from "./Components/TransferList";
 // import ImageCarouselParent from "./Components/ImageCarousel";
@@ -50,7 +51,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <DragDrop />
+        <WordCounter />
       </div>
     </>
   );
