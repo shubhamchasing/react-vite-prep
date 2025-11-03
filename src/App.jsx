@@ -1,5 +1,7 @@
 import "./App.css";
-import WordCounter from "./Components/WordCounter";
+import SocialMediaButtons from "./Components/SocialShare";
+// import MultiSelectDropdown from "./Components/MultiSelectDropdown";
+// import WordCounter from "./Components/WordCounter";
 // import DragDrop from "./Components/DragAndDrop1";
 // import CardCarouselParent from "./Components/CardCarousel";
 // import TransferList from "./Components/TransferList";
@@ -51,7 +53,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <WordCounter />
+        <SocialMediaButtons />
       </div>
     </>
   );
