@@ -1,5 +1,6 @@
 import "./App.css";
-import SocialMediaButtons from "./Components/SocialShare";
+import TrafficLight from "./Components/TrafficLights";
+// import SocialMediaButtons from "./Components/SocialShare";
 // import MultiSelectDropdown from "./Components/MultiSelectDropdown";
 // import WordCounter from "./Components/WordCounter";
 // import DragDrop from "./Components/DragAndDrop1";
@@ -53,7 +54,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <SocialMediaButtons />
+        <TrafficLight />
       </div>
     </>
   );
