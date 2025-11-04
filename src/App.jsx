@@ -1,5 +1,6 @@
 import "./App.css";
-import TrafficLight from "./Components/TrafficLights";
+import UndoRedo from "./Components/UndoRedo";
+// import TrafficLight from "./Components/TrafficLights";
 // import SocialMediaButtons from "./Components/SocialShare";
 // import MultiSelectDropdown from "./Components/MultiSelectDropdown";
 // import WordCounter from "./Components/WordCounter";
@@ -54,7 +55,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <TrafficLight />
+        <UndoRedo />
       </div>
     </>
   );
