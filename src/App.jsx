@@ -1,5 +1,6 @@
 import "./App.css";
-import UndoRedo from "./Components/UndoRedo";
+import MarkdownEditor from "./Components/MarkdownEditor";
+// import UndoRedo from "./Components/UndoRedo";
 // import TrafficLight from "./Components/TrafficLights";
 // import SocialMediaButtons from "./Components/SocialShare";
 // import MultiSelectDropdown from "./Components/MultiSelectDropdown";
@@ -55,7 +56,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <UndoRedo />
+        <MarkdownEditor />
       </div>
     </>
   );
