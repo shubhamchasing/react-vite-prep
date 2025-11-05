@@ -1,5 +1,6 @@
 import "./App.css";
-import PasswordGenerator from "./Components/PasswordGenerator";
+import StarRating from "./Components/StarRating";
+// import PasswordGenerator from "./Components/PasswordGenerator";
 // import MarkdownEditor from "./Components/MarkdownEditor";
 // import UndoRedo from "./Components/UndoRedo";
 // import TrafficLight from "./Components/TrafficLights";
@@ -57,7 +58,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <PasswordGenerator />
+        <StarRating/>
       </div>
     </>
   );
