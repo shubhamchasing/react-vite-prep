@@ -1,5 +1,6 @@
 import "./App.css";
-import MarkdownEditor from "./Components/MarkdownEditor";
+import PasswordGenerator from "./Components/PasswordGenerator";
+// import MarkdownEditor from "./Components/MarkdownEditor";
 // import UndoRedo from "./Components/UndoRedo";
 // import TrafficLight from "./Components/TrafficLights";
 // import SocialMediaButtons from "./Components/SocialShare";
@@ -56,7 +57,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <MarkdownEditor />
+        <PasswordGenerator />
       </div>
     </>
   );
