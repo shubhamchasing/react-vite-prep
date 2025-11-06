@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import "./styles.css";
 
 const transObj = {
-  //   id: 1,
   title: "",
   type: "income",
   amount: "",
@@ -13,7 +12,6 @@ const ExpenseTracker = () => {
   const [showForm, setShowForm] = useState(false);
   const [transaction, setTransaction] = useState(transObj);
   const [transactionList, setTransactionList] = useState([]);
-  const [filteredTransactionList, setFilteredTransactionList] = useState([]);
   const [search, setSearch] = useState("");
 
   //create filteredTransactions
@@ -31,17 +29,12 @@ const ExpenseTracker = () => {
         ...transactionList,
         {
           ...transaction,
-          id:
-            transactionList.length === 0
-              ? 1
-              : transactionList[transactionList.length - 1].id + 1,
+          id: Date.now()
         },
       ];
       setTransactionList(updatedTransactionList);
-      setFilteredTransactionList(updatedTransactionList);
       setTransaction(transObj);
       setShowForm(false);
-      handleSearch(search, updatedTransactionList);
     }
   };
 
@@ -51,15 +44,13 @@ const ExpenseTracker = () => {
       (item) => item.id !== id
     );
     setTransactionList(updatedTransactionList);
-    setFilteredTransactionList(updatedTransactionList);
-    handleSearch(search, updatedTransactionList);
   };
 
   const handleShowForm = () => {
     setShowForm(!showForm);
   };
 
-  const handleTransaction = (e, key) => {
+  const handleTransactionChange = (e, key) => {
     setTransaction((prev) => ({ ...prev, [key]: e.target.value }));
   };
 
@@ -82,17 +73,13 @@ const ExpenseTracker = () => {
   }, [transactionList]);
 
   const handleOnChangeSearch = (e) => {
-    const { value } = e.target;
-    handleSearch(value, transactionList);
-    setSearch(value);
+    setSearch(e.target.value);
   };
 
-  const handleSearch = (value, list) => {
-    const updatedTransactionList = list.filter((item) =>
-      item.title.includes(value)
-    );
-    setFilteredTransactionList(updatedTransactionList);
-  };
+  const filteredTransactionList = useMemo(
+    () => transactionList.filter((item) => item.title.includes(search)),
+    [transactionList, search]
+  );
 
   return (
     <div className="tracker-container">
@@ -119,7 +106,7 @@ const ExpenseTracker = () => {
             data-testid="title-input"
             placeholder="Title"
             value={transaction.title}
-            onChange={(e) => handleTransaction(e, "title")}
+            onChange={(e) => handleTransactionChange(e, "title")}
           />
           <input
             type="number"
@@ -127,12 +114,12 @@ const ExpenseTracker = () => {
             placeholder="Amount"
             min="0"
             value={transaction.amount}
-            onChange={(e) => handleTransaction(e, "amount")}
+            onChange={(e) => handleTransactionChange(e, "amount")}
           />
           <select
             data-testid="type-select"
             value={transaction.type}
-            onChange={(e) => handleTransaction(e, "type")}
+            onChange={(e) => handleTransactionChange(e, "type")}
           >
             <option value="income">Income</option>
             <option value="expense">Expense</option>
