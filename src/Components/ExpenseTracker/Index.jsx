@@ -18,9 +18,10 @@ const ExpenseTracker = () => {
 
   //Calculate balance using totalIncome and totalExpense
 
-  const handleAddTransaction = () => {
+  const handleAddTransaction = (e) => {
     // complete logic to create a new transaction object
     // update the state and reset form fields
+    e.preventDefault();
     const isAllFieldValid = Object.values(transaction).every(
       (value) => value.length > 0
     );
@@ -109,7 +110,7 @@ const ExpenseTracker = () => {
       </div>
 
       {showForm && (
-        <div className="form">
+        <form className="form" onSubmit={handleAddTransaction}>
           <input
             type="text"
             data-testid="title-input"
@@ -134,10 +135,10 @@ const ExpenseTracker = () => {
             <option value="income">Income</option>
             <option value="expense">Expense</option>
           </select>
-          <button data-testid="add-button" onClick={handleAddTransaction}>
+          <button type="submit" data-testid="add-button">
             Add Transaction
           </button>
-        </div>
+        </form>
       )}
 
       <div className="summary">
