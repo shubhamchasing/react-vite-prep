@@ -29,7 +29,7 @@ const ExpenseTracker = () => {
         ...transactionList,
         {
           ...transaction,
-          id: Date.now()
+          id: Date.now(),
         },
       ];
       setTransactionList(updatedTransactionList);
@@ -48,6 +48,12 @@ const ExpenseTracker = () => {
 
   const handleShowForm = () => {
     setShowForm(!showForm);
+  };
+
+  const handleKeyDown = (e) => {
+    if (["e", "E", "+", "-"].includes(e.key)) {
+      e.preventDefault();
+    }
   };
 
   const handleTransactionChange = (e, key) => {
@@ -77,7 +83,10 @@ const ExpenseTracker = () => {
   };
 
   const filteredTransactionList = useMemo(
-    () => transactionList.filter((item) => item.title.includes(search)),
+    () =>
+      transactionList.filter((item) =>
+        item.title.toLowerCase().includes(search.toLowerCase())
+      ),
     [transactionList, search]
   );
 
@@ -115,6 +124,7 @@ const ExpenseTracker = () => {
             min="0"
             value={transaction.amount}
             onChange={(e) => handleTransactionChange(e, "amount")}
+            onKeyDown={handleKeyDown}
           />
           <select
             data-testid="type-select"
@@ -155,7 +165,9 @@ const ExpenseTracker = () => {
               className={`${item.type === "income" ? "income" : "expense"}`}
               data-testid="transaction-item"
             >
-              {item.title}: ₹{item.amount}
+              <span>
+                {item.title}: ₹{item.amount}
+              </span>
               <button
                 type="button"
                 data-testid="delete-button"
