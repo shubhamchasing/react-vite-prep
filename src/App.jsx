@@ -1,5 +1,6 @@
 import "./App.css";
-import StarRating from "./Components/StarRating";
+import ExpenseTracker from "./Components/ExpenseTracker/Index";
+// import StarRating from "./Components/StarRating";
 // import PasswordGenerator from "./Components/PasswordGenerator";
 // import MarkdownEditor from "./Components/MarkdownEditor";
 // import UndoRedo from "./Components/UndoRedo";
@@ -58,7 +59,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <StarRating/>
+        <ExpenseTracker/>
       </div>
     </>
   );
