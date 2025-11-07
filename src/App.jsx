@@ -1,5 +1,6 @@
 import "./App.css";
-import ExpenseTracker from "./Components/ExpenseTracker/Index";
+import { TypeWriterMessage } from "./Components/TypewriterMessage";
+// import ExpenseTracker from "./Components/ExpenseTracker/Index";
 // import StarRating from "./Components/StarRating";
 // import PasswordGenerator from "./Components/PasswordGenerator";
 // import MarkdownEditor from "./Components/MarkdownEditor";
@@ -59,7 +60,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <ExpenseTracker/>
+        <TypeWriterMessage/>
       </div>
     </>
   );
