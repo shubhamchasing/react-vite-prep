@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./styles.css";
 
 const messages = [
@@ -15,51 +15,47 @@ export function TypeWriterMessage() {
   const [isTyping, setIsTyping] = useState(false);
   const [showSkip, setShowSkip] = useState(false);
 
-  const startTyping = () => {
+  const startTyping = useCallback(() => {
     // TODO: Implement start typing logic
     setIsTyping(true);
     setShowSkip(true);
     setDisplayedText("");
-  };
+  }, []);
 
-  const skipTyping = () => {
+  const skipTyping = useCallback(() => {
     // TODO: Implement skip typing logic
     setShowSkip(false);
     setIsTyping(false);
     setDisplayedText(messages[currentMessageIndex]);
-  };
+  }, [currentMessageIndex]);
 
-  const nextMessage = () => {
+  const nextMessage = useCallback(() => {
     // TODO: Implement next message logic
     const newIndex = (currentMessageIndex + 1) % messages.length;
     setCurrentMessageIndex(newIndex);
     setDisplayedText("");
     setIsTyping(false);
-  };
+  }, [currentMessageIndex]);
 
   // TODO: Implement useEffect with setInterval for typewriter effect
   useEffect(() => {
     // TODO: Add setInterval logic here
-    let timer;
-    if (isTyping) {
-      timer = setInterval(() => {
-        setDisplayedText((prev) => {
-          const curr =
-            prev +
-            messages[currentMessageIndex].slice(
-              displayedText.length,
-              displayedText.length + 1
-            );
-          return curr;
-        });
-      }, 100);
-    }
-    if (displayedText === messages[currentMessageIndex]) {
-      setIsTyping(false);
-      setShowSkip(false);
-    }
+    if (!isTyping) return;
+
+    const timer = setInterval(() => {
+      setDisplayedText((prev) => {
+        if (prev.length >= messages[currentMessageIndex].length) {
+          setIsTyping(false);
+          setShowSkip(false);
+          clearInterval(timer);
+          return prev;
+        }
+        return messages[currentMessageIndex].slice(0, prev.length + 1);
+      });
+    }, 100);
+
     return () => clearInterval(timer);
-  }, [displayedText, currentMessageIndex, isTyping]);
+  }, [currentMessageIndex, isTyping]);
 
   return (
     <div className="typewriter-container">
