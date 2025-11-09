@@ -33,7 +33,7 @@ import "./App.css";
 // import UserProfile from "./Components/UserProfile";
 // import AccordionParent from "./Components/Accordion";
 // import TogglePassword from "./Components/Toggle-Password";
-import DarkModeToggle from "./Components/Dark-Mode";
+// import DarkModeToggle from "./Components/Dark-Mode";
 // import SortableList from "./Components/Sort-List";
 // import TabsParent from "./Components/Tabs";
 // import TabSwitcher from "./Components/TabSwitcher";
@@ -45,7 +45,7 @@ import DarkModeToggle from "./Components/Dark-Mode";
 // import Counter from "./Components/Counter";
 // import RecipeFilterApp from "./Components/Filter-recipes";
 // import AgeCalculator from "./Components/Age-calculator";
-// import ContactForm from "./Components/Contact-Form";
+import ContactForm from "./Components/Contact-Form";
 // import EvenOrOddChecker from "./Components/OddEvenChecker";
 // import UseReducer from './Components/UseReducer'
 // import UseState from './Components/UseState'
@@ -60,7 +60,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <DarkModeToggle/>
+        <ContactForm/>
       </div>
     </>
   );

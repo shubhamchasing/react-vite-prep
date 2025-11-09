@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles.css";
 
 const validate = {
@@ -48,11 +48,18 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [submittedName, setSubmittedName] = useState("");
 
+  useEffect(() => {
+    const savedData = sessionStorage.getItem("contactForm");
+    if (savedData) setData(JSON.parse(savedData));
+  }, []);
+
   const handleOnChange = (event) => {
     const { name, value } = event.target;
     console.log(name, value);
     setData((prev) => {
-      return { ...prev, [name]: { ...prev[name], value } };
+      const updatedData = { ...prev, [name]: { ...prev[name], value } };
+      sessionStorage.setItem("contactForm", JSON.stringify(updatedData));
+      return updatedData;
     });
   };
 
@@ -78,6 +85,7 @@ const ContactForm = () => {
       setIsSubmitted(true);
       setSubmittedName(data.name.value);
       setData(initialState);
+      sessionStorage.removeItem("contactForm");
     }
 
     console.log(event.target);
@@ -90,7 +98,9 @@ const ContactForm = () => {
       ) : (
         <form className="form" action="" onSubmit={handleSubmit}>
           <div className="field-container">
-            <label className="label" htmlFor="name">Name:</label>
+            <label className="label" htmlFor="name">
+              Name:
+            </label>
             <input
               id="name"
               type="text"
