@@ -1,5 +1,5 @@
 import "./App.css";
-import { TypeWriterMessage } from "./Components/TypewriterMessage";
+// import { TypeWriterMessage } from "./Components/TypewriterMessage";
 // import ExpenseTracker from "./Components/ExpenseTracker/Index";
 // import StarRating from "./Components/StarRating";
 // import PasswordGenerator from "./Components/PasswordGenerator";
@@ -33,7 +33,7 @@ import { TypeWriterMessage } from "./Components/TypewriterMessage";
 // import UserProfile from "./Components/UserProfile";
 // import AccordionParent from "./Components/Accordion";
 // import TogglePassword from "./Components/Toggle-Password";
-// import DarkModeToggle from "./Components/Dark-Mode";
+import DarkModeToggle from "./Components/Dark-Mode";
 // import SortableList from "./Components/Sort-List";
 // import TabsParent from "./Components/Tabs";
 // import TabSwitcher from "./Components/TabSwitcher";
@@ -60,7 +60,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <TypeWriterMessage/>
+        <DarkModeToggle/>
       </div>
     </>
   );
