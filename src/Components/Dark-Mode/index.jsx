@@ -11,11 +11,19 @@ const getInitialTheme = () => {
 
 function DarkModeToggle() {
   const [isDarkMode, setIsDarkMode] = useState(getInitialTheme);
-   // below has flicker UI
+  // below has flicker UI
   // useEffect(() => {
   //   const storedTheme = localStorage.getItem("theme");
   //   if (storedTheme === "dark") setIsDarkMode(true);
   // }, []);
+
+  useEffect(() => {
+    const handleStorageEvent = (e) => {
+      if (e.key === "theme") setIsDarkMode(e.newValue === "dark");
+    };
+    window.addEventListener("storage", handleStorageEvent);
+   return () => window.removeEventListener("storage", handleStorageEvent);
+  }, []);
 
   const toggleTheme = () => {
     setIsDarkMode((prev) => {
