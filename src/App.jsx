@@ -22,7 +22,7 @@ import "./App.css";
 // import ReadMoreToggle from "./Components/ReadMoreToggle";
 // import BackToTop from "./Components/BackToTop";
 // import ColorExplorer from "./Components/ColorExplorer";
-// import AuthParent from "./Components/Authentication/AuthParent";
+import AuthParent from "./Components/Authentication/AuthParent";
 // import CopyClipboard from "./Components/CopyToClipboard";
 // import FaqAccordion from "./Components/FaqAccordian";
 // import TodoWithTimeout from "./Components/Todo-List-With-Timeout";
@@ -60,7 +60,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <ContactForm/>
+        <AuthParent/>
       </div>
     </>
   );
