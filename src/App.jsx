@@ -1,4 +1,5 @@
 import "./App.css";
+import PawnBoard from "./Components/PawnMoves";
 // import { TypeWriterMessage } from "./Components/TypewriterMessage";
 // import ExpenseTracker from "./Components/ExpenseTracker/Index";
 // import StarRating from "./Components/StarRating";
@@ -22,7 +23,7 @@ import "./App.css";
 // import ReadMoreToggle from "./Components/ReadMoreToggle";
 // import BackToTop from "./Components/BackToTop";
 // import ColorExplorer from "./Components/ColorExplorer";
-import AuthParent from "./Components/Authentication/AuthParent";
+// import AuthParent from "./Components/Authentication/AuthParent";
 // import CopyClipboard from "./Components/CopyToClipboard";
 // import FaqAccordion from "./Components/FaqAccordian";
 // import TodoWithTimeout from "./Components/Todo-List-With-Timeout";
@@ -45,7 +46,7 @@ import AuthParent from "./Components/Authentication/AuthParent";
 // import Counter from "./Components/Counter";
 // import RecipeFilterApp from "./Components/Filter-recipes";
 // import AgeCalculator from "./Components/Age-calculator";
-import ContactForm from "./Components/Contact-Form";
+// import ContactForm from "./Components/Contact-Form";
 // import EvenOrOddChecker from "./Components/OddEvenChecker";
 // import UseReducer from './Components/UseReducer'
 // import UseState from './Components/UseState'
@@ -60,7 +61,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <AuthParent/>
+        <PawnBoard />
       </div>
     </>
   );
