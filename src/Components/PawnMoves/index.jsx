@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./styles.css";
 
 const boardSize = 8;
@@ -38,7 +38,9 @@ export default function PawnBoard() {
               onMouseLeave={() => setHovered(null)}
               data-row={row}
               data-col={col}
-            ></div>
+            >
+              {isHovered && <span className="pawn-icon">♙</span>}
+            </div>
           );
         })
       )}
