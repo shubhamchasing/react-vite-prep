@@ -1,5 +1,6 @@
 import "./App.css";
-import PawnBoard from "./Components/PawnMoves";
+import RookChessboard from "./Components/RookMoves";
+// import PawnBoard from "./Components/PawnMoves";
 // import { TypeWriterMessage } from "./Components/TypewriterMessage";
 // import ExpenseTracker from "./Components/ExpenseTracker/Index";
 // import StarRating from "./Components/StarRating";
@@ -61,7 +62,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <PawnBoard />
+        <RookChessboard />
       </div>
     </>
   );
