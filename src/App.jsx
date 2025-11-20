@@ -1,5 +1,6 @@
 import "./App.css";
-import RookChessboard from "./Components/RookMoves";
+import BishopMoves from "./Components/BishopMove";
+// import RookChessboard from "./Components/RookMoves";
 // import PawnBoard from "./Components/PawnMoves";
 // import { TypeWriterMessage } from "./Components/TypewriterMessage";
 // import ExpenseTracker from "./Components/ExpenseTracker/Index";
@@ -62,7 +63,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <RookChessboard />
+        <BishopMoves />
       </div>
     </>
   );
