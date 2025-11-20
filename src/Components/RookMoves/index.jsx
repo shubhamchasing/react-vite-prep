@@ -31,7 +31,9 @@ export default function RookChessboard() {
               onMouseLeave={() => setHovered(null)}
               data-row={row}
               data-col={col}
-            ></div>
+            >
+              {isHovered && <span className="rook-icon">♜</span>}
+            </div>
           );
         })
       )}
