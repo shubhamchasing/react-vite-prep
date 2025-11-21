@@ -10,7 +10,7 @@ import BishopMoves from "./Components/BishopMove";
 // import UndoRedo from "./Components/UndoRedo";
 // import TrafficLight from "./Components/TrafficLights";
 // import SocialMediaButtons from "./Components/SocialShare";
-// import MultiSelectDropdown from "./Components/MultiSelectDropdown";
+import MultiSelectDropdown from "./Components/MultiSelectDropdown";
 // import WordCounter from "./Components/WordCounter";
 // import DragDrop from "./Components/DragAndDrop1";
 // import CardCarouselParent from "./Components/CardCarousel";
@@ -63,7 +63,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <BishopMoves />
+        <MultiSelectDropdown />
       </div>
     </>
   );
