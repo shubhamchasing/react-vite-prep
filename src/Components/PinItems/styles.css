@@ -1,0 +1,78 @@
+/* Base styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #2f3e46;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #dfe3e6;
+  transition: background 0.3s;
+}
+
+li:hover {
+  background: #e6f0ff;
+}
+
+li.pinned {
+  background: rgb(10, 150, 150);
+  border-color: rgb(4, 150, 150);
+  font-weight: 400;
+  color: #856404;
+}
+
+/* Label and Checkbox */
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 14px;
+  color: #343a40;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Checkbox Custom Styling */
+input[type="checkbox"] {
+  accent-color: #434943;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}

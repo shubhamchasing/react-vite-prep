@@ -1,5 +1,6 @@
 import "./App.css";
-import BishopMoves from "./Components/BishopMove";
+import PinItems from "./Components/PinItems";
+// import BishopMoves from "./Components/BishopMove";
 // import RookChessboard from "./Components/RookMoves";
 // import PawnBoard from "./Components/PawnMoves";
 // import { TypeWriterMessage } from "./Components/TypewriterMessage";
@@ -10,7 +11,7 @@ import BishopMoves from "./Components/BishopMove";
 // import UndoRedo from "./Components/UndoRedo";
 // import TrafficLight from "./Components/TrafficLights";
 // import SocialMediaButtons from "./Components/SocialShare";
-import MultiSelectDropdown from "./Components/MultiSelectDropdown";
+// import MultiSelectDropdown from "./Components/MultiSelectDropdown";
 // import WordCounter from "./Components/WordCounter";
 // import DragDrop from "./Components/DragAndDrop1";
 // import CardCarouselParent from "./Components/CardCarousel";
@@ -63,7 +64,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <MultiSelectDropdown />
+        <PinItems />
       </div>
     </>
   );
