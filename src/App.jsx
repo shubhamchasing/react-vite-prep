@@ -1,6 +1,7 @@
 import "./App.css";
-import PinItems from "./Components/PinItems";
-// import BishopMoves from "./Components/BishopMove";
+import ListSorterParent from "./Components/ListSorter";
+// import PiynItems from "./Components/PinItems";
+// import BishopMoves frListSorterParentom "./Components/BishopMove";
 // import RookChessboard from "./Components/RookMoves";
 // import PawnBoard from "./Components/PawnMoves";
 // import { TypeWriterMessage } from "./Components/TypewriterMessage";
@@ -64,7 +65,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <PinItems />
+        <ListSorterParent />
       </div>
     </>
   );
