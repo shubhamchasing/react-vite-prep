@@ -1,5 +1,6 @@
 import "./App.css";
-import ListSorterParent from "./Components/ListSorter";
+import EmojiReplacer from "./Components/EmojiReplacer";
+// import ListSorterParent from "./Components/ListSorter";
 // import PiynItems from "./Components/PinItems";
 // import BishopMoves frListSorterParentom "./Components/BishopMove";
 // import RookChessboard from "./Components/RookMoves";
@@ -65,7 +66,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <ListSorterParent />
+        <EmojiReplacer />
       </div>
     </>
   );
