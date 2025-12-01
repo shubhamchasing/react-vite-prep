@@ -1,5 +1,7 @@
 import "./App.css";
-import EmojiReplacer from "./Components/EmojiReplacer";
+import KnightChessboard from "./Components/KnightMove";
+// import DataTableParent from "./Components/DataTable";
+// import EmojiReplacer from "./Components/EmojiReplacer";
 // import ListSorterParent from "./Components/ListSorter";
 // import PiynItems from "./Components/PinItems";
 // import BishopMoves frListSorterParentom "./Components/BishopMove";
@@ -66,7 +68,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <EmojiReplacer />
+        <KnightChessboard />
       </div>
     </>
   );
