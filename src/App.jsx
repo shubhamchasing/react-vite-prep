@@ -1,5 +1,6 @@
 import "./App.css";
-import KnightChessboard from "./Components/KnightMove";
+import ProgressBar2 from "./Components/ProgressBar2";
+// import KnightChessboard from "./Components/KnightMove";
 // import DataTableParent from "./Components/DataTable";
 // import EmojiReplacer from "./Components/EmojiReplacer";
 // import ListSorterParent from "./Components/ListSorter";
@@ -68,7 +69,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <KnightChessboard />
+        <ProgressBar2 />
       </div>
     </>
   );
