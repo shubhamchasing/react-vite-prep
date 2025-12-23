@@ -1,5 +1,6 @@
 import "./App.css";
-import ProgressBar2 from "./Components/ProgressBar2";
+import AutoSearch from "./Components/AutoSearch";
+// import ProgressBar2 from "./Components/ProgressBar2";
 // import KnightChessboard from "./Components/KnightMove";
 // import DataTableParent from "./Components/DataTable";
 // import EmojiReplacer from "./Components/EmojiReplacer";
@@ -69,7 +70,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <ProgressBar2 />
+        <AutoSearch />
       </div>
     </>
   );
