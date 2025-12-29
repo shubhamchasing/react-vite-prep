@@ -1,5 +1,6 @@
 import "./App.css";
-import AutoSearch from "./Components/AutoSearch";
+import AutoSaveForm from "./Components/AutoSaveForm";
+// import AutoSearch from "./Components/AutoSearch";
 // import ProgressBar2 from "./Components/ProgressBar2";
 // import KnightChessboard from "./Components/KnightMove";
 // import DataTableParent from "./Components/DataTable";
@@ -70,7 +71,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <AutoSearch />
+        <AutoSaveForm />
       </div>
     </>
   );
