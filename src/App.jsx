@@ -1,5 +1,6 @@
 import "./App.css";
-import AutoSaveForm from "./Components/AutoSaveForm";
+import GridLights from "./Components/GridLIghts2";
+// import AutoSaveForm from "./Components/AutoSaveForm";
 // import AutoSearch from "./Components/AutoSearch";
 // import ProgressBar2 from "./Components/ProgressBar2";
 // import KnightChessboard from "./Components/KnightMove";
@@ -71,7 +72,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <AutoSaveForm />
+        <GridLights />
       </div>
     </>
   );
