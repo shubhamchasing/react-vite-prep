@@ -1,5 +1,6 @@
 import "./App.css";
-import GridLights from "./Components/GridLIghts2";
+import CommentApp from "./Components/NestedComments";
+// import GridLights from "./Components/GridLIghts2";
 // import AutoSaveForm from "./Components/AutoSaveForm";
 // import AutoSearch from "./Components/AutoSearch";
 // import ProgressBar2 from "./Components/ProgressBar2";
@@ -72,7 +73,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <GridLights />
+        <CommentApp />
       </div>
     </>
   );
