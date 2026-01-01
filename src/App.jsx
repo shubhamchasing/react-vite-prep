@@ -1,5 +1,6 @@
 import "./App.css";
-import CommentApp from "./Components/NestedComments";
+import TreeNavigation from "./Components/TreeNavigation";
+// import CommentApp from "./Components/NestedComments";
 // import GridLights from "./Components/GridLIghts2";
 // import AutoSaveForm from "./Components/AutoSaveForm";
 // import AutoSearch from "./Components/AutoSearch";
@@ -67,13 +68,29 @@ import CommentApp from "./Components/NestedComments";
 // import Tooltip from "./Components/Tooltip";
 // import Sidebar from "./Components/Sidebar";
 
+const initialTree = [
+  {
+    id: "1",
+    name: "Root",
+    type: "folder",
+    children: [
+      { id: "2", name: "File1.txt", type: "file" },
+      {
+        id: "3",
+        name: "Folder1",
+        type: "folder",
+        children: [{ id: "4", name: "File2.txt", type: "file" }],
+      },
+    ],
+  },
+];
 function App() {
   // const progressBarList = [0,1,3, 4,5, 10, 18, 50, 79, 100];
 
   return (
     <>
       <div className="App">
-        <CommentApp />
+        <TreeNavigation tree={initialTree} />
       </div>
     </>
   );
