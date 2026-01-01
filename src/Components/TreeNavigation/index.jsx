@@ -133,5 +133,23 @@ function TreeNavigation({ tree }) {
     </div>
   );
 }
+const initialTree = [
+  {
+    id: "1",
+    name: "Root",
+    type: "folder",
+    children: [
+      { id: "2", name: "File1.txt", type: "file" },
+      {
+        id: "3",
+        name: "Folder1",
+        type: "folder",
+        children: [{ id: "4", name: "File2.txt", type: "file" }],
+      },
+    ],
+  },
+];
 
-export default TreeNavigation;
+const TreeNavigationWrapper = () => <TreeNavigation tree={initialTree} />;
+
+export default TreeNavigationWrapper;
