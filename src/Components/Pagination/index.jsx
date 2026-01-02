@@ -4,6 +4,7 @@ import ProductCard from "./ProductCard.jsx";
 import { FiChevronsLeft, FiChevronsRight } from "react-icons/fi";
 
 const PAGE_SIZE = 10;
+const DOTS = "DOTS";
 
 const Pagination = () => {
   const [products, setProducts] = useState([]);
@@ -33,7 +34,37 @@ const Pagination = () => {
       currentPage * PAGE_SIZE
     );
   }, [currentPage, products]);
-  
+
+  const windowedPagination = useMemo(() => {
+    if (totalPage <= 5) {
+      return Array.from({ length: totalPage }, (_, i) => i + 1);
+    }
+    const pages = [];
+
+    // Start zone
+    if (currentPage <= 3) {
+      for (let i = 1; i <= 4; i++) {
+        pages.push(i);
+      }
+      pages.push(DOTS, totalPage);
+      return pages;
+    }
+
+    // End zone
+    if (currentPage >= totalPage - 2) {
+      pages.push(1, DOTS);
+      for (let i = totalPage - 3; i <= totalPage; i++) {
+        pages.push(i);
+      }
+      return pages;
+    }
+
+    // Middle zone
+    pages.push(1, DOTS);
+    pages.push(currentPage - 1, currentPage, currentPage + 1);
+    pages.push(DOTS, totalPage);
+    return pages;
+  }, [currentPage, totalPage]);
 
   if (products.length === 0) {
     return <h2>No products found</h2>;
@@ -51,17 +82,22 @@ const Pagination = () => {
         >
           <FiChevronsLeft />
         </button>
-        {Array.from({ length: totalPage }, (_, i) => i + 1).map((pageNum) => (
-          <button
-            className={`pagination-btn ${
-              currentPage === pageNum ? "active" : ""
-            }`}
-            key={pageNum}
-            onClick={() => handleChangePage(pageNum)}
-          >
-            {pageNum}
-          </button>
-        ))}
+        {windowedPagination.map((pageNum, index) => {
+          if (pageNum === DOTS) {
+            return <span key={pageNum + index}>...</span>;
+          }
+          return (
+            <button
+              className={`pagination-btn ${
+                currentPage === pageNum ? "active" : ""
+              }`}
+              key={pageNum}
+              onClick={() => handleChangePage(pageNum)}
+            >
+              {pageNum}
+            </button>
+          );
+        })}
         <button
           id="next"
           className="pagination-btn"
