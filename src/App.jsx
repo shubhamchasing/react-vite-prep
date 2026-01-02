@@ -1,5 +1,6 @@
 import "./App.css";
-import TreeNavigation from "./Components/TreeNavigation";
+import Pagination from "./Components/Pagination";
+// import TreeNavigation from "./Components/TreeNavigation";
 // import CommentApp from "./Components/NestedComments";
 // import GridLights from "./Components/GridLIghts2";
 // import AutoSaveForm from "./Components/AutoSaveForm";
@@ -75,7 +76,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <TreeNavigation />
+        <Pagination />
       </div>
     </>
   );
